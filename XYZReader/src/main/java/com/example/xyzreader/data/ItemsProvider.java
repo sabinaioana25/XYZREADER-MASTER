@@ -15,6 +15,7 @@ import android.net.Uri;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings({"ConstantConditions", "NullableProblems"})
 public class ItemsProvider extends ContentProvider {
 	private SQLiteOpenHelper mOpenHelper;
 
@@ -54,7 +55,8 @@ public class ItemsProvider extends ContentProvider {
 		}
 	}
 
-	@Override
+	@SuppressWarnings("ConstantConditions")
+    @Override
 	public Cursor query(Uri uri, String[] projection, String selection, String[] selectionArgs, String sortOrder) {
 		final SQLiteDatabase db = mOpenHelper.getReadableDatabase();
 		final SelectionBuilder builder = buildSelection(uri);
@@ -65,6 +67,7 @@ public class ItemsProvider extends ContentProvider {
         return cursor;
 	}
 
+	@SuppressWarnings("NullableProblems")
 	@Override
 	public Uri insert(Uri uri, ContentValues values) {
 		final SQLiteDatabase db = mOpenHelper.getWritableDatabase();
@@ -124,7 +127,8 @@ public class ItemsProvider extends ContentProvider {
      * a {@link SQLiteDatabase} transaction. All changes will be rolled back if
      * any single one fails.
      */
-    public ContentProviderResult[] applyBatch(ArrayList<ContentProviderOperation> operations)
+    @SuppressWarnings("NullableProblems")
+	public ContentProviderResult[] applyBatch(ArrayList<ContentProviderOperation> operations)
             throws OperationApplicationException {
         final SQLiteDatabase db = mOpenHelper.getWritableDatabase();
         db.beginTransaction();
