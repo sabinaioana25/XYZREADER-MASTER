@@ -25,11 +25,4 @@ local.properties
 .idea/modules.xml
 .idea/runConfigurations.xml
 .idea/vcs.xml
-XYZReader/src/main/res/anim-v21/
-XYZReader/src/main/res/drawable-hdpi/
-XYZReader/src/main/res/drawable-ldpi/
-XYZReader/src/main/res/drawable-mdpi/
-XYZReader/src/main/res/drawable-nodpi/
-XYZReader/src/main/res/drawable-xhdpi/
-XYZReader/src/main/res/drawable-xxhdpi/app_bar_image.png
-XYZReader/src/main/res/drawable-xxxhdpi/
+
