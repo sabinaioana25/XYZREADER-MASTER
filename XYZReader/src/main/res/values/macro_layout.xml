@@ -9,12 +9,14 @@
     <dimen name="detail_photo_height">304dp</dimen>
     <dimen name="detail_card_top_margin">@dimen/detail_photo_height</dimen>
     <dimen name="detail_inner_horiz_margin">16dp</dimen>
-    <dimen name="detail_card_max_width">1000dp</dimen> <!-- force match_parent -->
-    <dimen name="detail_metabar_vert_padding">16dp</dimen>
+    <dimen name="detail_card_max_width" tools:keep="@dimen/detail_card_max_width">1000dp</dimen> <!-- force match_parent -->
+    <dimen name="detail_metabar_vert_padding" tools:keep="@dimen/detail_metabar_vert_padding">16dp</dimen>
+    <dimen name="app_title_margin" tools:keep="@dimen/app_title_margin">32dp</dimen>
+    <dimen name="app_title_text_size" tools:keep="@dimen/app_title_text_size">24sp</dimen>
     <dimen name="detail_metabar_title_bottom_padding">4dp</dimen>
     <dimen name="detail_body_top_margin" tools:keep="@dimen/detail_body_top_margin">16dp</dimen>
-    <dimen name="detail_body_bottom_margin">88dp</dimen>
+    <dimen name="detail_body_bottom_margin" tools:keep="@dimen/detail_body_bottom_margin">88dp</dimen>
     <dimen name="detail_margin_top">10dp</dimen>
-    <dimen name="detail_margin_top_layout">250dp</dimen>
+    <dimen name="detail_margin_top_layout" tools:keep="@dimen/detail_margin_top_layout">250dp</dimen>
 
 </resources>

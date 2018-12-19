@@ -30,7 +30,7 @@
             android:padding="@dimen/padding_title_tv"
             android:paddingBottom="@dimen/padding_bottom_title_tv"
             android:textColor="@color/ltgray"
-            tools:text="@tools:sample/cities" />
+            tools:text="@tools:sample/lorem" />
 
         <TextView
             android:id="@+id/article_subtitle"
